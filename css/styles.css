@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc {
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    color: #000;
+    display: flex;
+    /*Para fazer a estrutura em colunas*/
+    flex-direction: column;
+}
+
+#calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation, 
+#current-operation {
+    min-height: 1.6em;  
+    padding: 0.2em;
+    /*Para fazer o texto não transbordar*/
+    overflow-wrap: break-word;
+}
+
+#previous-operation {
+    color: #777;
+}
+
+#current-operation {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#buttons-container {
+    /*Para fazer o grid*/
+    display: grid;
+    /*Para deivir tudo em colunas certinhas*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*Para dar um espaçamento entre as divisões*/
+    gap: 5px;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    /*Para os botões poderem serem clicados*/
+    cursor: pointer;
+}
+
+#buttons-container .number {
+    background-color: #F3F3F3F3;
+}
+
+#buttons-container button:hover {
+    background-color: #bababa;
+    border-color: #9999;
+}
+
+#buttons-container #equal-btn {
+    /*Para fazer o botão do igual pegar mais de uma coluna*/
+    grid-column: span 2;
+    background-color: #75a5cb;
+}
+
+#buttons-container #equal-btn:hover {
+    background-color: #3a91d8;
+}
