@@ -4,7 +4,7 @@ Calculadora feita em HTML, CSS e Javascript
 
 <p float="left">
 
- <img src="../Calculadora/img/interface.png" width="200" />
+ <img src="img/interface.png" width="200" />
 
   /> 
 
